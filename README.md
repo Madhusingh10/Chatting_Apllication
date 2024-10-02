@@ -9,10 +9,15 @@ Java is used for the overall implementation, including the networking and GUI. I
 Swing (GUI):
 
 JFrame: The main window is created using JFrame for both client and server.
+
 JPanel: Different sections like the header, message area, and input field are arranged using JPanel.
+
 JTextField: Used for the message input field, allowing the user to type messages.
+
 JButton: The "Send" button triggers the action to send the message.
+
 JLabel: Labels are used to display various elements, such as user names, profile images, and the actual chat messages.
+
 BoxLayout and BorderLayout: Used for organizing the components like the chat messages and input areas in a structured manner.
 
 Sockets (Networking):
@@ -34,11 +39,13 @@ Messages are encapsulated in JPanel objects with customized formatting. The mess
 Time Stamps: Each message is appended with a timestamp generated using SimpleDateFormat and Calendar, which formats the current time of the message.
 
 Code Breakdown:
+
 Client:
 
 The client initiates a connection with the server using sockets and provides a graphical interface where the user can input and send messages.
 The GUI components are laid out using JPanel, and the "Send" button triggers the actionPerformed method to send the message.
 Incoming messages from the server are continuously read using DataInputStream and displayed in the chat panel.
+
 Server:
 
 The server waits for a client to connect using ServerSocket and handles incoming messages from the client through DataInputStream.
