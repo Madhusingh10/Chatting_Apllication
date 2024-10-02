@@ -58,4 +58,6 @@ Both Client and Server continuously listen for messages via DataInputStream and 
 
 The user interface on both sides updates dynamically as new messages are exchanged.
 This project showcases the core principles of real-time messaging using sockets, basic UI design with Swing, and the handling of user interactions through event listeners.
+![Screenshot (1299)](https://github.com/user-attachments/assets/352ea9f6-3882-47e8-b0be-a6bddbfcc683)
+
 
